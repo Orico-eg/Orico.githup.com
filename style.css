@@ -1,0 +1,546 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+/* -------------Start Header--------------- */
+
+header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+header span {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+}
+
+header span i {
+    font-size: 1.4em;
+    font-weight: 500;
+}
+
+header span img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+nav {
+    margin: 10px;
+}
+
+header a {
+    text-decoration: none;
+    padding: 25px;
+}
+
+header a:hover {
+    background-color: lightgray;
+    border-radius: 15%;
+}
+
+
+/* ------------End Header---------------- */
+
+
+/* -------------Start Slider--------------- */
+
+.slider {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+.slider figure div {
+    float: left;
+    width: 20%;
+}
+
+.slider figure div img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0px;
+    animation: animate 20s infinite;
+}
+
+@keyframes animate {
+    0% {
+        left: 0;
+    }
+    10% {
+        left: 0;
+    }
+    12% {
+        left: -100%;
+    }
+    22% {
+        left: -100%;
+    }
+    24% {
+        left: -200%;
+    }
+    34% {
+        left: -200%;
+    }
+    36% {
+        left: -300%;
+    }
+    46% {
+        left: -300%;
+    }
+    48% {
+        left: -400%;
+    }
+    58% {
+        left: -400%;
+    }
+    60% {
+        left: -300%;
+    }
+    70% {
+        left: -300%;
+    }
+    72% {
+        left: -200%;
+    }
+    82% {
+        left: -200%;
+    }
+    84% {
+        left: -100%;
+    }
+    94% {
+        left: -100%;
+    }
+    96% {
+        left: 0;
+    }
+}
+
+
+/* --------------End the Slider------------- */
+
+
+/* --------------Start About Us-------------- */
+
+.main-info {
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    margin-right: 5em;
+    margin-left: 5em;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+.main-info h2 {
+    max-width: 400px;
+    min-height: 300px;
+    font-size: large;
+    font-weight: 700;
+    background-color: lightgray;
+    margin-top: 30px;
+    grid-column: 1 /span 2;
+    grid-row: 1/span 2;
+    padding-top: 20%;
+    padding-left: 20%;
+    transition: 0.3s;
+}
+
+.main-info h2:hover {
+    transform: scale(1.1);
+}
+
+.main-info p {
+    grid-column: 2/ span 4;
+    grid-row: 2 / span 4;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.05);
+    padding: 1.5em;
+    transition: 0.3s;
+}
+
+.main-info p:hover {
+    transform: scale(1.1);
+}
+
+
+/* ----------------End About Us--------------- */
+
+
+/* ----------------Start Card for Team Work -------------- */
+
+#team-work {
+    margin-top: 2em;
+    padding: 1.5em;
+    width: 100%;
+    text-align: center;
+}
+
+.team-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 35vh;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 1.5em;
+    display: inline-block;
+    padding: 10%;
+}
+
+.social-icons i:hover {
+    color: blue;
+}
+
+
+/* -------------End Team work------------------ */
+
+
+/*---------------start Contact us -------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+.container {
+    margin-top: 10%;
+    width: 85%;
+    background: #fff;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .content .left-side {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+
+.content .left-side::before {
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #afafb6;
+}
+
+.content .left-side .details {
+    margin: 14px;
+    text-align: center;
+}
+
+.content .left-side .details i {
+    font-size: 30px;
+    color: #3e2093;
+    margin-bottom: 10px;
+}
+
+.content .left-side .details .topic {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content .left-side .details .text-one,
+.content .left-side .details .text-two {
+    font-size: 14px;
+    color: #afafb6;
+}
+
+.container .content .right-side {
+    width: 75%;
+    margin-left: 75px;
+}
+
+.content .right-side .topic-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: #3e2093;
+}
+
+.right-side .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.right-side .input-box input,
+.right-side .input-box textarea {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #F0F1F8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.right-side .message-box {
+    min-height: 110px;
+}
+
+.right-side .input-box textarea {
+    padding-top: 6px;
+}
+
+.right-side .button {
+    display: inline-block;
+    margin-top: 12px;
+}
+
+.right-side .button input[type="button"] {
+    color: #fff;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #3e2093;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input[type="button"]:hover {
+    background: #5029bc;
+}
+
+@media (max-width: 950px) {
+    .container {
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+    }
+    .container .content .right-side {
+        width: 75%;
+        margin-left: 55px;
+    }
+}
+
+@media (max-width: 820px) {
+    .container {
+        margin: 40px 0;
+        height: 100%;
+    }
+    .container .content {
+        flex-direction: column-reverse;
+    }
+    .container .content .left-side {
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container .content .left-side::before {
+        display: none;
+    }
+    .container .content .right-side {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+
+/*------------End Contact us----------------*/
+
+
+/*-------------start products card---------*/
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flip-card {
+    display: flex;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+}
+
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+
+/* Style the back side */
+
+.flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+/*-------------end products card----------*/
+
+
+/*--------------start footer------------*/
+
+.footer {
+    background: #000;
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .row {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .row a:hover {
+    color: #fff;
+}
+
+.footer .row ul {
+    width: 100%;
+}
+
+.footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .row a i {
+    font-size: 10%;
+    padding-right: 5%;
+}
+
+
+/* @media (max-width:720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+    .footer .row ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+    .footer .row a i {
+        margin: 0% 3%;
+    }
+} */
+
+
+/*---------------end footer-------------*/
